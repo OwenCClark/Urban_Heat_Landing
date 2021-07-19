@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Urban Heat Vulnerability</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+            <h1><strong>I am</strong><a href="assets/resume/Clark_Resume.pdf" target="_blank"> <strong>Owen Clark</strong> </a>, a GIS Analyst<br />
+                map and technology enthusiast</h1>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one">
+            <header class="major">
+                <h3>Visualizing areas of excessive heat in Philadelphia<br />
+                    with Mean Radiant Temperature.</h3>
+            </header>
+            <a href="https://owencclark.github.io/Urban_Heat_Vulnerability/" target="_blank"><img src="images/Capture1.JPG" alt="" width="750" height="425"></a>
+        </section>
+        <h4><a href="https://owencclark.github.io/Urban_Heat_Vulnerability/" target="_blank">Visit the map here.</a></h4>
+        
+        <h5>This web map was created using a few different data sources and tools. First LiDAR point clouds of Philadelphia were processed into DEM and DSM raster images using Python and ArcPy. Those DEM and DSM images were then added to a SOLWEIG model which stands for Solar and LongWave Environmental Irradiance Geometry. The SOLWEIG model is part of the Urban Multi-scale Environmental Predictor or UMEP plugin for QGIS. You can read more about the model and plugin
+            <a href="https://umep-docs.readthedocs.io/projects/tutorial/en/latest/Tutorials/IntroductionToSolweigNYC.html" target="_blank">here</a>.
+        </h5>
+
+        <h5>The resulting raster is added into ArcGIS Pro and given a color scale based on the pixel values which correspond with the mean radiant temperature for that area. This colorized raster is then exported and uploaded to MapBox along with a census tract shapefile of Philadelphia County that includes some demographic information about the populations in each census tract.</h5>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://github.com/OwenCClark" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/owencclark/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Owen Clark</li>
+                <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
